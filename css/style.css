@@ -1,4 +1,22 @@
+/*APRENDENDO SOBRE CORES AULA 1*/
+
+/*
 h1{
-color:red;
+color:rgba(255, 0, 0, 0.445);
+o rgba add mais uma propriedade onde podemos deixar tranparente, mas a cor ainda continua vermelho
+}
+h1{
+color:#ff000041;
+aqui temos a transparencia em hexadecimal
+}
+
+h1{
+color:#ff00ff;
+cor roxa
+}
+*/
+
+h1{
+color:#ff00ff;
 
 }

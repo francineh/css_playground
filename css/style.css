@@ -15,8 +15,17 @@ color:#ff00ff;
 cor roxa
 }
 */
+html{
+font-size:16px;
 
+}
+
+div{
+
+    font-size: 3rem;
+}
 h1{
+    background-color:aqua;
 color:#ff00ff;
-
+width: 10%;
 }

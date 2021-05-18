@@ -67,3 +67,72 @@ margin:1rem;
 
 
 3> %; (porcentagem) é utilizada basicamente para a largura.(relativoa porcentagem da tela)
+
+
+
+
+Mais Propriedades CSS para lidar com texto
+
+
+mudamos o nosso html, colocamos mais alguns H e tag P, e 2 listas.
+
+
+border; BORDA É O QUE FICA EM VOLTA DO NOSSO ELEMENTO
+a partir do momento em que vc nao especificar mais nada com relação ao seletor, tods os h1 por exemplo vai pegar o css.
+
+trabalhando o h2 
+
+font-family: Arial, Helvetica, sans-serif;
+font-weight:bold;
+
+}
+
+dicas sobre fontes use o google font. use o link para pegar o font family.(antes do css)
+
+cuidado ao usar fontes personalizadas para que nao ter problema de performace no site. so inclua o que vc vai usar.
+
+
+span{
+font-size: 40px;
+font-family:"comic sans ms" ;
+color:yellow;
+text-decoration: line-through ou underline;
+
+}
+
+text-transform:uppercase; /*letras maiuscula*/
+}
+
+text-transform:lowercase; /*letras minuscula*/
+}s
+text-transform:capitalize; /*primeira letra maiuscula*/
+}
+
+tranformam nosso texto.
+
+
+
+ul{
+font-size:30px;
+list-style:square; quadrado e o none tira tudo
+
+}
+
+ol{
+font-size:30px;
+list-style:lower-roman ; numeros romanos 
+
+}
+
+ol{
+font-size:30px;
+list-style:uppercase-roman ; numeros romanos em maiuscula
+
+}
+
+ol{
+font-size:30px;
+list-style:upper-latin; em latin
+
+}
+

@@ -15,17 +15,46 @@ color:#ff00ff;
 cor roxa
 }
 */
-html{
-font-size:16px;
 
-}
-
-div{
-
-    font-size: 3rem;
-}
 h1{
     background-color:aqua;
 color:#ff00ff;
-width: 10%;
+width: 50%;
+border: 9px dotted gray;
+
+}
+
+h2{
+    width:50%;
+    font: clamp(2rem, 5vh, 3.6rem) / 1.1 "Nunito", sans-serif;
+
+font-weight:bold;
+text-align:center; /* se refere ao testo dentro do h2*/
+border: 9px solid red;
+}
+
+p{
+background-color:black;
+color:white;
+
+}
+
+span{
+font-size: 40px;
+font-family:"comic sans ms" ;
+color:yellow;
+text-decoration: underline;
+text-transform:uppercase; /*letras maiuscula*/
+}
+
+ul{
+font-size:30px;
+list-style:square;
+
+}
+
+ol{
+font-size:40px;
+list-style:upper-latin;
+margin-left:40px;
 }

@@ -182,4 +182,52 @@ embora sao classes com nomes diferentes, eles funcionanm como se fosse a mesma, 
 
 regra 1: tudo que aparecer depois no meu css vai ter prioridade.
 
+exemplos de especificidades
+.titulo.titulo-pagna{aqui eu estou somando meu seletor.} eu so vou obdecer as regras a seguir para todos os elementos que tiverem essas duas classes. 
 
+regra 2> somar o peso de cada especificidades.
+
+quando especificado oo "id", algumas regras css foram ignoradas, ou seja o metodo cascata nao se aplicou nesse caso. exemplo :
+
+#titulo-principal{
+    margin-left:5rem;
+}
+/*1 - 0 - 0 = este seletor vai ter peso 1000 por que vou selecionar ele pelo id/ pegou nao importantando a posição que esta no css */
+
+#titulo-principal{
+color:aquamarine;
+
+
+}
+/* cascata e sobre escrever uma regra*/
+/* 0 - 2 - 0 = seletor por duas classes , é peso somado, 2 classes peso 20, 3 classes peso 30*/
+.titulo.titulo-pagna{color:#b66983;
+margin-left:3rem;} /*este seletor é mais especifico que os seletores abaixo/por que eu quero todos que tiverem essas duas classes*/
+/* 0 - 1 - 0 = seletor por classe tem peso 10*/
+.titulo-pagna{
+    color:red;
+    font-size: 5rem;
+    border: 5px solid red;
+}
+/* 0 - 1 - 0 = seletor por classe tem peso 10*/
+.titulo{
+    color:green;
+    border-style: dashed;
+}
+/* 0 - 0 -1> seletor por tag tem peso 1*/
+h1{
+    color: blue;
+}
+
+regras> NUNCA UTILIZAR ID, POR QUE ELE É USADO NO JAVASCRIPT.
+2> POR ELE CABAR SOBRE ESCREVENDO TUDO, ELE VAI ACABAR COMPLICANDO AS REGRAS DE RESOLUÇÃO.
+3> ESCREVA SEU CODIGO, DE FORMA QUE FAÇA SENTIDO, CASO FOR NECESARIO NOVAS ALTERAÇÕES.
+
+mesmo com peso = a 1, a tag pode sim ganhar mais força quando usado o !important; dai ele sobre escreve todas as outras regras css.
+
+h1{
+    color: blue !important;
+}
+
+nesse caso todos os h1 vai ter a cor azul! important;
+isso se usa em ultimo caso.

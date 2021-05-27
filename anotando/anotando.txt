@@ -142,3 +142,44 @@ DIA 27/05/2021 APRENDENDO SOBRE ID E CLASSES
 
 # jogo da velha para selecionar um ID 
 
+cascade e especividade>>>>>>>>>>>>>>>>>>>>>>>>>..
+
+quando voce tem duas classes iguais e repete a regra, minha cor é vermelha no primeiro seletor e no segundo é verde, devido ao sistema de cascada, meu seletor a ser aplicado é o segundo, por que uma regra sobre escreveu a outra.
+exemplo:
+.titulo{
+    color:red;
+
+}
+
+.titulo{
+    color:green;
+}
+
+exemplo 2
+
+.titulo-pagna{
+    color:red;
+    font-size: 5rem;
+}
+
+.titulo{
+    color:green;
+}
+
+embora sao classes com nomes diferentes, eles funcionanm como se fosse a mesma, detalhe que a classe titulo-pagina tambem se encontra no html.
+
+
+.titulo-pagna{
+    color:red;
+    font-size: 5rem;
+    border: 5px solid red;
+}
+
+.titulo{
+    color:green;
+    border-style: dashed;
+}
+
+regra 1: tudo que aparecer depois no meu css vai ter prioridade.
+
+

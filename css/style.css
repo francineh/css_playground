@@ -16,14 +16,14 @@ cor roxa
 }
 */
 
-h1{
+/*h1{
     background-color:aqua;
 color:#ff00ff;
 width: 50%;
 border: 9px dotted gray;
 
 }
-
+*/
 h2{
     width:50%;
     font: clamp(2rem, 5vh, 3.6rem) / 1.1 "Nunito", sans-serif;
@@ -68,3 +68,16 @@ margin-left:40px;
 #titulo-principal{
     margin-left:5rem;
 }
+
+/* cascata e sobre escrever uma regra*/
+.titulo-pagna{
+    color:red;
+    font-size: 5rem;
+    border: 5px solid red;
+}
+
+.titulo{
+    color:green;
+    border-style: dashed;
+}
+

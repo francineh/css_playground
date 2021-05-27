@@ -136,3 +136,9 @@ list-style:upper-latin; em latin
 
 }
 
+DIA 27/05/2021 APRENDENDO SOBRE ID E CLASSES 
+
+.para selecionar uma classe se usa o ponto
+
+# jogo da velha para selecionar um ID 
+

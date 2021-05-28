@@ -96,6 +96,66 @@ margin-left:3rem;} /*este seletor é mais especifico que os seletores abaixo/por
 }*/
 
 h1{
-    color: blue !important;
+    color: blue;
 }
 
+.titulo-generico{
+font-size:40px;
+color:red;
+
+}
+
+
+.container-exemplo  .titulo-generico{ 
+    /*NAO IMPORTA O NIVEL, PEGUE TODOS OS ELEMENTOS QUE TEM O TITULO-GENERICO E APLIQUE AS REGRAS A SEGUIR*/
+font-size:80px;
+    color:#b263bd;
+
+}
+
+.meu-link{
+font-size:40px;
+text-decoration: none;
+
+}
+
+.meu-link:hover{
+    font-size:50px;
+    text-decoration: underline;
+    background-color: brown;
+    
+    }
+
+    .meu-link:link{
+
+        color:green;
+    }
+
+    .meu-link:visited{
+
+        color:#b66983;
+    }
+
+    .meu-link:active{ /* quando se esta apertando ele*/
+        font-size:40px;
+        color:#380315;
+    }
+
+    .meu-link:focus{/*aquilo que esta focado*/
+        font-size:90px;
+        color:#050505;
+    }
+
+    #nome{
+        font-size:30px;
+        color:#182b69;
+        background:#130107;
+
+    }
+
+    #nome:focus{
+        font-size:90px;
+        color:#49051f;
+        background:#b66983;
+
+    }

@@ -250,7 +250,29 @@ pseudo classe : tudo que tiver : dois pontos exemplos
 
 .meu-link:hover{
 
+04/06/2021>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.....
 
+seletores e pseudo classes 
+exemplo 
+tenho uma lista de compras ou itens, e eu nao quero que pegue bordas na parte de baixo use este pseudo classe.
+
+.menu-item{
+border: 2px dashed rgb(80, 1, 67);
+background-color:grey;
+margin-bottom: 20px;
+}
+
+/*EU NAO QUERO QUE MEU ULTIMO ITEM PEGUE O MARGIN-BOOTON*/
+
+.menu-item:last-child{
+margin-bottom:0px;
+
+}
+
+ SITE PARA MAIS SELETORES
+
+ ​https://developer.mozilla.org/en-US/docs/Web/CSS/
+ 
     
 
 

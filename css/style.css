@@ -159,3 +159,51 @@ text-decoration: none;
         background:#b66983;
 
     }
+
+    /*outros seletores e pseudo classes*/
+
+    .nav-menu{
+border:2px solid blue;
+list-style: none;
+}
+
+.menu-item{
+border: 2px dashed rgb(80, 1, 67);
+background-color:grey;
+margin-bottom: 20px;
+}
+
+/*EU NAO QUERO QUE MEU ULTIMO ITEM PEGUE O MARGIN-BOOTON*/
+
+.menu-item:last-child{
+margin-bottom:0px;
+
+}
+
+/*EU QUERO QUE MEU PRIMEIRO ITEM DA MINHA LISTA PEGUE A FORMATAÇÃO*/
+
+.menu-item:first-child{
+  color:red;
+}  
+
+/*EU QUERO PEGAR MEU 3 FILHO*/
+
+.menu-item:nth-child(3){
+background:green;
+
+}
+
+/*EU QUERO QUE A PARTIR DO 2 ITEM RECEBA AS FORMATAÇÕES A SEGUIR*/ 
+
+.menu-item:nth-child(n + 2){
+font-weight:bold;
+}
+
+/*SELETORES DE ATRIBUTOS*/
+/*QUERO SELECIONAR ALGUM FORMULARIO PELO TIPO, NUMERO, TEXTO, E AFINS*/
+.meu-input[type="number"]{
+ font-size:70px;   
+background-color: black;
+color:rgb(231, 229, 229);
+}
+

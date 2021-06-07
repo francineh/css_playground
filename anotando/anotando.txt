@@ -273,7 +273,33 @@ margin-bottom:0px;
 
  ​https://developer.mozilla.org/en-US/docs/Web/CSS/
  
-    
 
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+ DIA 07/06/2021
 
+ AULA DISPLAY MODE
+
+ as div tem por padrao um display bloco, isso signica que ele ocupa toda o bloco da minha pagina, um quadrado como um todo.   
+em outras palavras ocupam todo o espaço disponivel. 
+
+se eu mudar a minha div para um display:inline; ele vai ocupar o suficiente para englobar meu texto.
+
+regras:
+
+DISPLAY:BLOCK> ACEITA O width eo height( altura e largura),padding,margin,e border,funciona na vertical e na horizontal.
+sempre vao quebrar uma linha entre um elemento e outro.
+
+DISPLAY:inline> NAO ACEITA O width eo height( altura e largura)
+padding,margin,e border,funciona so na horizontal.
+
+mais utilizados  por padrao sao inline.
+<span>
+<strong>
+<em>
+<a>
+nao aceita margin-top, e nem margin-left
+
+( quando se coloca o display:inline-block, ele passa respeitar, altura, largura, os padding,margin,border e afins. )
+ainda assim ele se exforça em pegar somente o que esta caracterizado como block.se é so uma palavra sera apenas uma palavra. nao tem o mesmo efeito como as div.
+é um misto dos dois.

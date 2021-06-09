@@ -1,0 +1,37 @@
+> Os valores de paddin e border, estao sendo incluidos no tamanho total do elemento.
+border: 10px solid red;
+> o paddin é a distancia da borda para dentro do conteudo.
+padding: 10px;
+
+> margin: é a distancia da borda pro elemento vizinho. 
+margin:10px; aqui eu tenho 10 px nos 4 cantos do quadrado, mas fica para fora da borda.
+o valor da margin ela nao esta sendo somada, pelo simples fato de que ela esta fora da borda, e asfins.
+por isso nesse caso a minha medida ainda esta de 140 por 140.
+
+
+> embora voce coloque medidas exatas de width e height, voce tambem vai usar uma borda ou um padding, bom as medidas podem sair fora do seu controle.
+
+o box-sizing: contant-box; é por padrao, significa que o valor que eu colocar no width e height é so o valo de dentro, o padding e boder nao entram aqui dentro entao a gente tem que somar manualmente para saber o valor total do meu elemento.
+
+Por isso ao colocar o box-sizing: border-box; agora vai ser o o valor que vai ocupar na tela.
+
+usando esse seletor no inicio do meu css
+
+*{
+    box-sizing: border-box; 
+}
+
+desse jeito eu consegui controlar exatamente o tamanho do meu box.
+
+o asterisco é um idcard= ele vai pegar todos os elementos da pagina.
+
+obs: ja que eu tenho um valor para altura, a minha palavra conteudo se localiza ao topo.
+
+o paddin vai sempre a distancia da borda ate o conteudo.
+
+padding:10px valor de cima e embaixo 40px valor das laterais direita e esqurda;
+
+
+
+dica> evite o colocar altura... por que se nao o seu elemento nao vai esticar quando necessario for.
+A menos que seja de 100% 

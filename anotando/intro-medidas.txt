@@ -1,0 +1,109 @@
+DIA 17/05/2021 INTRODUÇÃO DE MEDIDAS NO CSS E
+
+
+mais usada
+ 
+ 1>  px; (pixcel) unidade de medida absoluta( esta vc mais usa)
+/*
+menas usada
+
+2> in; (polegada) unidade de medida absoluta
+
+3> cm; (centimetro) unidade de medida absoluta
+
+4> mm; (milimetro) unidade de medida absoluta
+
+essas apenas existem */
+
+UNIDADE DE MEDIDAS RELATIVAS 
+
+obs: na tag <html> por padrao temos um font-size de 16px, por isso quando nao alteramos o css, por padrao ele mantem o tamanho padrao do nosso html.
+entao quando colocamos no nosso css 1em; estamos dizendo que o meu h1 por exemplo é 16px.
+
+
+1> em; (vem do desing grafico, é relativo ao tamanho do n da nossa fonte, SEMPRE VAI SER RELATIVO A TAG PAI.)
+por isso que quando eu colocar 2em seria o dobro de 16px, que é 32px;.
+vai ser muito usado pra responsividade.
+
+
+2> rem; ( continua sendo relativa mas sempre vai ser relativo ao pai de todos que é o HTML. ) sempre vai ser relativo a tag root. 
+
+muito mais utilizadas
+
+exemplos de onde se usar o rem.
+
+width: 20rem;
+height:5rem;
+padding: 2rem;
+margin:1rem;
+
+
+3> %; (porcentagem) é utilizada basicamente para a largura.(relativoa porcentagem da tela)
+
+
+
+
+Mais Propriedades CSS para lidar com texto
+
+
+mudamos o nosso html, colocamos mais alguns H e tag P, e 2 listas.
+
+
+border; BORDA É O QUE FICA EM VOLTA DO NOSSO ELEMENTO
+a partir do momento em que vc nao especificar mais nada com relação ao seletor, tods os h1 por exemplo vai pegar o css.
+
+trabalhando o h2 
+
+font-family: Arial, Helvetica, sans-serif;
+font-weight:bold;
+
+}
+
+dicas sobre fontes use o google font. use o link para pegar o font family.(antes do css)
+
+cuidado ao usar fontes personalizadas para que nao ter problema de performace no site. so inclua o que vc vai usar.
+
+
+span{
+font-size: 40px;
+font-family:"comic sans ms" ;
+color:yellow;
+text-decoration: line-through ou underline;
+
+}
+
+text-transform:uppercase; /*letras maiuscula*/
+}
+
+text-transform:lowercase; /*letras minuscula*/
+}s
+text-transform:capitalize; /*primeira letra maiuscula*/
+}
+
+tranformam nosso texto.
+
+
+
+ul{
+font-size:30px;
+list-style:square; quadrado e o none tira tudo
+
+}
+
+ol{
+font-size:30px;
+list-style:lower-roman ; numeros romanos 
+
+}
+
+ol{
+font-size:30px;
+list-style:uppercase-roman ; numeros romanos em maiuscula
+
+}
+
+ol{
+font-size:30px;
+list-style:upper-latin; em latin
+
+}

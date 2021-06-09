@@ -24,202 +24,196 @@ border: 9px dotted gray;
 
 }
 */
-h2{
-    width:50%;
-    font: clamp(2rem, 5vh, 3.6rem) / 1.1 "Nunito", sans-serif;
-
-font-weight:bold;
-text-align:center; /* se refere ao testo dentro do h2*/
-border: 9px solid red;
+*{
+  box-sizing: border-box;
 }
 
-p{
-background-color:black;
-color:white;
 
+
+h2 {
+  width: 50%;
+  font: clamp(2rem, 5vh, 3.6rem) / 1.1 "Nunito", sans-serif;
+
+  font-weight: bold;
+  text-align: center; /* se refere ao testo dentro do h2*/
+  border: 9px solid red;
 }
 
-span{
-font-size: 40px;
-font-family:"comic sans ms" ;
-color:yellow;
-text-decoration: underline;
-text-transform:uppercase; /*letras maiuscula*/
-display: inline-block;
-width:100%;
-height:100%;
-background-color: rgb(59, 35, 35);
-
+p {
+  background-color: black;
+  color: white;
 }
 
-ul{
-font-size:30px;
-list-style:square;
-
+span {
+  font-size: 40px;
+  font-family: "comic sans ms";
+  color: yellow;
+  text-decoration: underline;
+  text-transform: uppercase; /*letras maiuscula*/
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(59, 35, 35);
 }
 
-ol{
-font-size:40px;
-list-style:upper-latin;
-margin-left:40px;
+ul {
+  font-size: 30px;
+  list-style: square;
+}
+
+ol {
+  font-size: 40px;
+  list-style: upper-latin;
+  margin-left: 40px;
 }
 
 /*SOBRE ID E CLASSES*/
 
 .conteudo {
-    margin-left:1rem;
+  margin-left: 1rem;
 }
 
-#titulo-principal{
-    margin-left:5rem;
+#titulo-principal {
+  margin-left: 5rem;
 }
 /*1 - 0 - 0 = este seletor vai ter peso 1000 por que vou selecionar ele pelo id/ pegou nao importantando a posição que esta no css */
 
-#titulo-principal{
-color:aquamarine;
-
-
+#titulo-principal {
+  color: aquamarine;
 }
 /* cascata e sobre escrever uma regra*/
 /* 0 - 2 - 0 = seletor por duas classes , é peso somado, 2 classes peso 20, 3 classes peso 30*/
-.titulo.titulo-pagna{color:#b66983;
-margin-left:3rem;} /*este seletor é mais especifico que os seletores abaixo/por que eu quero todos que tiverem essas duas classes*/
+.titulo.titulo-pagna {
+  color: #b66983;
+  margin-left: 3rem;
+} /*este seletor é mais especifico que os seletores abaixo/por que eu quero todos que tiverem essas duas classes*/
 /* 0 - 1 - 0 = seletor por classe tem peso 10*/
-.titulo-pagna{
-    color:red;
-    font-size: 5rem;
-    border: 5px solid red;
+.titulo-pagna {
+  color: red;
+  font-size: 5rem;
+  border: 5px solid red;
 }
 /* 0 - 1 - 0 = seletor por classe tem peso 10*/
-.titulo{
-    color:green;
-    border-style: dashed;
+.titulo {
+  color: green;
+  border-style: dashed;
 }
 /* 0 - 0 -1> seletor por tag tem peso 1*/
 /*h1{
     color: blue !important;
 }*/
 
-h1{
-    color: blue;
+h1 {
+  color: blue;
 }
 
-.titulo-generico{
-font-size:40px;
-color:red;
-
+.titulo-generico {
+  font-size: 40px;
+  color: red;
 }
 
-
-.container-exemplo  .titulo-generico{ 
-    /*NAO IMPORTA O NIVEL, PEGUE TODOS OS ELEMENTOS QUE TEM O TITULO-GENERICO E APLIQUE AS REGRAS A SEGUIR*/
-font-size:80px;
-    color:#b263bd;
-
+.container-exemplo .titulo-generico {
+  /*NAO IMPORTA O NIVEL, PEGUE TODOS OS ELEMENTOS QUE TEM O TITULO-GENERICO E APLIQUE AS REGRAS A SEGUIR*/
+  font-size: 80px;
+  color: #b263bd;
 }
 
-.meu-link{
-font-size:40px;
-text-decoration: none;
-
+.meu-link {
+  font-size: 40px;
+  text-decoration: none;
 }
 
-.meu-link:hover{
-    font-size:50px;
-    text-decoration: underline;
-    background-color: brown;
-    
-    }
-
-    .meu-link:link{
-
-        color:green;
-    }
-
-    .meu-link:visited{
-
-        color:#b66983;
-    }
-
-    .meu-link:active{ /* quando se esta apertando ele*/
-        font-size:40px;
-        color:#380315;
-    }
-
-    .meu-link:focus{/*aquilo que esta focado*/
-        font-size:90px;
-        color:#050505;
-    }
-
-    #nome{
-        font-size:30px;
-        color:#182b69;
-        background:#130107;
-
-    }
-
-    #nome:focus{
-        font-size:90px;
-        color:#49051f;
-        background:#b66983;
-
-    }
-
-    /*outros seletores e pseudo classes*/
-
-    .nav-menu{
-border:2px solid blue;
-list-style: none;
+.meu-link:hover {
+  font-size: 50px;
+  text-decoration: underline;
+  background-color: brown;
 }
 
-.menu-item{
-border: 2px dashed rgb(80, 1, 67);
-background-color:grey;
-margin-bottom: 20px;
+.meu-link:link {
+  color: green;
+}
+
+.meu-link:visited {
+  color: #b66983;
+}
+
+.meu-link:active {
+  /* quando se esta apertando ele*/
+  font-size: 40px;
+  color: #380315;
+}
+
+.meu-link:focus {
+  /*aquilo que esta focado*/
+  font-size: 90px;
+  color: #050505;
+}
+
+#nome {
+  font-size: 30px;
+  color: #182b69;
+  background: #130107;
+}
+
+#nome:focus {
+  font-size: 90px;
+  color: #49051f;
+  background: #b66983;
+}
+
+/*outros seletores e pseudo classes*/
+
+.nav-menu {
+  border: 2px solid blue;
+  list-style: none;
+}
+
+.menu-item {
+  border: 2px dashed rgb(80, 1, 67);
+  background-color: grey;
+  margin-bottom: 20px;
 }
 
 /*EU NAO QUERO QUE MEU ULTIMO ITEM PEGUE O MARGIN-BOOTON*/
 
-.menu-item:last-child{
-margin-bottom:0px;
-
+.menu-item:last-child {
+  margin-bottom: 0px;
 }
 
 /*EU QUERO QUE MEU PRIMEIRO ITEM DA MINHA LISTA PEGUE A FORMATAÇÃO*/
 
-.menu-item:first-child{
-  color:red;
-}  
+.menu-item:first-child {
+  color: red;
+}
 
 /*EU QUERO PEGAR MEU 3 FILHO*/
 
-.menu-item:nth-child(3){
-background:green;
-
+.menu-item:nth-child(3) {
+  background: green;
 }
 
-/*EU QUERO QUE A PARTIR DO 2 ITEM RECEBA AS FORMATAÇÕES A SEGUIR*/ 
+/*EU QUERO QUE A PARTIR DO 2 ITEM RECEBA AS FORMATAÇÕES A SEGUIR*/
 
-.menu-item:nth-child(n + 2){
-font-weight:bold;
+.menu-item:nth-child(n + 2) {
+  font-weight: bold;
 }
 
 /*SELETORES DE ATRIBUTOS*/
 /*QUERO SELECIONAR ALGUM FORMULARIO PELO TIPO, NUMERO, TEXTO, E AFINS*/
-.meu-input[type="number"]{
- font-size:70px;   
-background-color: black;
-color:rgb(231, 229, 229);
-margin-bottom: 30px;
+.meu-input[type="number"] {
+  font-size: 70px;
+  background-color: black;
+  color: rgb(231, 229, 229);
+  margin-bottom: 30px;
 }
 /*AULA DE DISPLAY MODE*/
-.bloco-inicial{/*por padrao bloco*/
-    font-size:30px;
-    background:#49051f;
-    display:block;
-    margin-bottom: 20px;
-margin-right: 3px;
-
+.bloco-inicial {
+  /*por padrao bloco*/
+  font-size: 30px;
+  background: #49051f;
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 3px;
 }
 /*
 span
@@ -231,19 +225,38 @@ span
     display:inline; por padrao 
 }*/
 
+.menu-items {
+  border: 2px dashed rgb(80, 1, 67);
+  background-color: grey;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 30px;
+  min-width: 200px;
+}
 
-.menu-items{border: 2px dashed rgb(80, 1, 67);
-    background-color:grey;
-    margin-bottom: 20px;
-    display:inline-block;
-    font-size: 30px;
-    min-width: 200px;
-    }
+.escondido {
+  font-size: 1rem;
+  color: #0d4e68;
+  display: none;
+}
 
+/*AULA DE BOX-MODEL*/
 
-    .escondido{
-font-size:1rem;
-color:#0d4e68;
-display:none;
+.box{
+width: 100px;
+height:100px;
+background-color:#119bd1;
+/*border: 10px solid red;*/
+/*padding: 10px;
+padding-top: 40px;
+padding-left: 5px;
+padding-right: 10px;
+padding-bottom: 20px;
+*/
+padding:10px 40px;
+margin:10px;
 
-    }
+border-top: 10px solid red;
+
+border-bottom: 4px dashed green;
+}

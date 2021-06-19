@@ -1,0 +1,98 @@
+Neste exemplo foi criado uma div no nosso html que contem a palavra texto tendo como classe wrapper.
+
+obs: Por padrao o font-size do html é de 16px;.
+
+Se eu coloco 3rem; significa que eu vou ter 3 vezes 16 px que da 48px.
+
+1> primeiro passo colocar essa caixa(minha div) no centro da pagina:
+
+2> ao utilizar o margin:0 auto; nos possibilita a deixar minha caixa centralizada no meio de tudo. por que eu tenho margem nas laterais e nao no em cima e em baixo 
+configurar estrutura.
+
+3> criados 3 paragrafos dentro dessa div wrapper.
+
+Nao quero as margens que vem por padrao nos meus <p>, entao faça 
+
+.wrapper p{
+    margin-top:0;
+}
+
+um paragrafo fica abaixo do outro, e isso é o fluxo normal das coisas.
+
+Ai temos o flout... o que é?
+é uma prorpiedade para remover um elemento desse fluxo e alinhar sei la ao lado direito.so que antes de existir grid, transformava a vida do desenvolvedor num pesadelo.
+
+isenrindo uma imagem.
+
+eu quero que a minha imagem flutue a esquerda.
+.wrapper .gatinho{
+float:left;
+margin: 0 20px 10px 0;
+}
+
+eu quero que o meu outro paragrafo fique abaixo da minha foto.
+lhe apresento o clear... o que ele faz?
+este paragrafo para de ser float, ou seja eles nao estao mais flutuando na tela.
+
+.wrapper .clear{
+  clear: both;
+}
+mas quando n tem mais um paragrafo depois da foto?
+
+::after{
+  é como se fosse um espacinho logo depois do wrapper. 
+}
+
+é um seletor para uma coisa que nao existe, por isso se chama de pseudo elemento.
+
+o  display:table; tambem é do tipo bloco.
+
+AQUI TERMINA O PRIMEIRO EXEMPLO-------------------------------------------------------------------------------------------
+
+COMO USAR O FLOAT PARA FAZER LAYOUTE:
+
+lembrando que o fluxo das coisas é de cima para baixo ou seja da caixa vermelha para verde.
+ou seja cada elemento ele é impilhado.
+
+se usarmos um float:right; no azuk por exemplo, a minha caixa vai para a minha direita e isso acontece por que:
+ele saiu do fluxo que era de cima para baixo e veio para direita.
+e os outros dois continuam empilhado no outro.
+
+Se usarmos o float no vermelho os outros elementos sobem para cima.
+
+se usarmos o float no verde, ele sai do fluxo e o elemento pai( que é a nossa caixa wrapper22 nao se estica mais.)
+mas se eu usar o clear, o meu elemento pai volta a se esticar.
+
+
+se eu usar float nos 3 exemplos, ele vai ficar empilhado da direita para esquedda. se eu usar 
+
+float:right; em todos os elementos.
+
+AQUI TERMINA O 2 EXEMPLO -------------------------------------------------------------------------------------------------
+
+ainda esta empilhado, por que o fluxo do docupento é de cima para baixo, mesmo que eu coloque uma alrgura de 300px ele ainda vai ficar emilhado de cima para baixo por causa do fluxo do documento, pelo simples fato de cada quadrdinho por assim dizer ser uma div.
+
+.wrapper3{}
+
+mesmo que eu coloque o minimo de altura meus conteudos ainda continuam espandindo.
+
+AQUI TERMINA O EXEMPLO 3--------------------------------------------------------------------------------------------------
+
+
+foi criado uma div wrapper4 e dentro dela uma div filha sem nada dela.
+
+quando eu coloco uma posição relativa eu posso controlar a posição que o elemento esta,
+se eu colocar por exemplo um top:20px; eu posso ver que a minha caixa vermelha esta a 20px do topo. com relação ao parente que é o wrapper4.....
+se eu colocar left:20px; ele vai para a direita.
+
+mesmo saindo da caixa pai, ele continua no fluxo do documento respeitando o de cima pra baixo.
+
+se eu coloco posição absoluta a primeira coisa que acontece é que ele se transforma em um inline block, isso quer dizer que vai acompanhar o maximo de conteudo que ele existe.
+
+o absolute sai do fluxo do documento. se eu por um top de 500px; por exemplo  ele fica com 500px do topo isso significa que ele vai pra baixo.
+
+top 500 é com relação ao parent que é positin relative.
+
+e temos tambem o position:fixed; que mesmo que tenha rolamento ele permanece fixo na pagina, ideial para barras laterais.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -1,0 +1,72 @@
+trabalhando para deixar uma imagem responsivo-----------------------------------------------------------------------------
+
+foi criado uma div com a classe wrapper5 e dentro dela temos uma imagem de 900 de largura e 700 de altura.
+
+para isso usamos na nosssa classe um maximo de largura de 100% e uma altura automatica representada pelo codigo a seguir:
+
+.gatinho-responsivo{
+  max-width: 100%;
+  height:auto;
+}
+
+viw port é o que o user esta vendo.
+
+ela nao precisa ficar em 100% da tela, ela pode ficar em 100% do espaço disponivel para ela.
+
+se eu colocar o meu .... 
+
+.wrapper5{
+     width:600px;
+ }
+
+o meu gatinho vai ocupar 100% da largura do meu wrapper5. deixando claro que ela pode sim ocupar 100% do meu espaço disponivel.
+
+so que neste caso o meu wrapper5 esta com uma largura fixa, mas se eu colocar porcentagem ele vai se adaptar ao tamanho da tela.
+
+se a imagem for muito grande, ele igual vai carregar a imagem grande.... eu so estou alterando o tamanho da minha imagem fazendo com que se adapte ao tamanho da minha tela, ou largura da minha div principal, que nesse caso é o wrapper5.
+isso a gente usa sempre no nosso layout.
+
+
+AQUI TERMINA MEU EXERCICIO SOBRE IMAGENS----------------------------------------------------------------------------------
+
+MEDIA QUERIES>
+
+é um seletor no meu css que permite que eu selecione um viw port, tudo que meu usuario vê, com isso eu posso criar outros seletores dentro dese arranjo.
+
+como se faz:
+
+
+@media(largura){
+aqui se coloca os outros seletores e parametros.
+}
+
+/* esses sao os valores padroes para as max-width: */
+
+@media (max-width: 1200px) {
+  body{background-color:red;}
+  }
+  
+
+@media (max-width: 1024px) {
+body{background-color:green;}
+}
+
+@media (max-width: 760px) {
+  body{background-color:blue;}
+  }
+  
+  @media (max-width: 480px) {
+    body{background-color:yellow;}
+  }
+    
+este jeito de fazer é: fiz no desktop primeiro agora estou pensando em moblie, por isso do maior pro menor....
+
+mas se eu pensar no moblie primeiro a tecnica usada é essa
+
+@media (min-width: 1200px) {
+  body{background-color:red;}
+  }
+
+usamos o minimo de largura pro maior.
+
+obs: quanto mais simples melhor.....

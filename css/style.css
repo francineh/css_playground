@@ -1,6 +1,5 @@
 /*APRENDENDO SOBRE CORES AULA 1*/
 
-
 /*
 h1{
 color:rgba(255, 0, 0, 0.445);
@@ -28,12 +27,13 @@ border: 9px dotted gray;
 * {
   box-sizing: border-box;
 }
-:root{
-  font-size:14px;
+:root {
+  font-size: 14px;
 }
 
 body {
   margin: 0;
+  background-color: white;
 }
 
 h2 {
@@ -353,26 +353,26 @@ margin-bottom: 10px;
 
 .wrapper3::after {
   /* aqui eu nao quero que tenha algum conteudo */
-  content: '';
+  content: "";
   display: table;
   /* se utilizar float sempre utilize clear, é o que possibilita meu fluxo do elemento volte ao normal/ é clear:both,por que eu to limpando tando embaixo quanto nas laterais */
   clear: both;
 }
 
 .service {
- width: 31%; 
-border: 1px solid blue;
-float:left;
-min-height:200px;
-margin:auto 1%;
-padding: 1%;
+  width: 31%;
+  border: 1px solid blue;
+  float: left;
+  min-height: 200px;
+  margin: auto 1%;
+  padding: 1%;
 }
 /* exemplo 4 */
 .wrapper4 {
-  border:2px solid  blue;
-  padding:40px;
-  margin-top:40px;
-  position:relative;
+  border: 2px solid blue;
+  padding: 40px;
+  margin-top: 40px;
+  position: relative;
 }
 /* 
 .filha{
@@ -383,10 +383,57 @@ top:20px;
 left:20px;
 /* } */
 /* existe tambem o position:fixed; que mesmo que tenha rolamento ele permanece fixo na pagina, ideial para barras laterais */
-.filha{
-  position:absolute;
-  background-color:red;
-  padding:20px;
-top:500px;
-left:20px;
+.filha {
+  position: absolute;
+  background-color: red;
+  padding: 20px;
+  top: 500px;
+  left: 20px;
 }
+
+/* Layouts em CSS - Design Responsivo, Imagens Fluídas e Media Queries */
+/* imagem responsivo */
+.wrapper5 {
+  width: 600px;
+}
+.gatinho-responsivo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* MEDIA QUERIES */
+/* esses sao os valores padroes para as max-width: */
+
+@media (max-width: 1200px) {
+  body{background-color:red;}
+  }
+  
+
+@media (max-width: 1024px) {
+body{background-color:green;}
+.service{
+  width: 40%;
+  margin-left:5%;
+
+}
+}
+
+@media (max-width: 760px) {
+  body{background-color:blue;
+  }
+  .gatinho-responsivo{
+    display:none;
+
+  }  
+.service{
+  width:100%;
+  font-family:verdana;
+  background:rgb(14, 228, 199);
+}
+
+}
+  
+  @media (max-width: 480px) {
+    body{background-color:yellow;}
+  }
+    
